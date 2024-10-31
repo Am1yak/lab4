@@ -7,7 +7,7 @@ public class PicType {
         this.filePath = filePath;
     }
 
-    public void draw(int x, int y) {
-        System.out.println(fileName + " " + filePath + " at x=" + x + " y=" + y);
+    public void change(String destFile) {
+        System.out.println("Changed icon for " + destFile + " with " + fileName + " at " + filePath);
     }
 }

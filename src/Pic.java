@@ -1,15 +1,13 @@
 public class Pic {
-    int x;
-    int y;
     PicType type;
+    String destFile;
 
-    public Pic(int x, int y, PicType type) {
-        this.x = x;
-        this.y = y;
+    public Pic(String destFile, PicType type) {
         this.type = type;
+        this.destFile = destFile;
     }
 
-    public void draw() {
-        type.draw(x, y);
+    public void change() {
+        type.change(destFile);
     }
 }
